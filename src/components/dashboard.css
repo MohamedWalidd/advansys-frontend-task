@@ -1,0 +1,27 @@
+.dashboard-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 180px;
+  height:25px;
+  padding: 0px;
+}
+.dashboard-content{
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+strong {
+  font-size: 12px;
+  font-weight: 700;
+  color: #2B3674;
+}
+
+.active{
+width: 2.85px;
+height:24px;
+background: #BA1319;
+border-radius: 17.7865px;
+}
+

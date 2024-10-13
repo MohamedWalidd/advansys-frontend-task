@@ -1,0 +1,23 @@
+/* Small_Earnings */
+.small-earnings-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  width: auto;
+  height: auto;
+  border-radius: 14px;
+  gap: 8px;
+}
+
+.icon-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color:#F4F7FE;
+  border-radius: 20px;
+  height: 35px;
+  width:35px;
+} 
+

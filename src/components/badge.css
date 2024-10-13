@@ -1,0 +1,23 @@
+.badge-container {
+display: flex;
+align-items: center;
+justify-content: center;
+  width: 62px;
+  height: 18px;
+  padding: 2px 8px 2px 8px;
+  gap: 8px;
+  border-radius: 15.39px;
+  opacity: 0.5;
+}
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 20px;
+}
+
+.badge-strong {
+  font-size: 9px;
+  font-weight: 500;
+  line-height: 13.5px;
+  text-align: center;
+}

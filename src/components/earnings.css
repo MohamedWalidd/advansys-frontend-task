@@ -1,0 +1,27 @@
+.earnings-container{
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+height: 40px;
+font-family:"DM Sans"
+}
+.earnings-container p{
+    font-weight: 500;
+    font-size: 12px;
+    color: #7482AE;
+    padding-right: 6px;
+    margin: 0;
+}
+.earnings-container strong{
+    font-weight: 700;
+    font-size:16px ;
+    color: #2B3674;
+}
+.earnings-container div{
+    display: flex;
+    align-items: center;
+}
+.earnings-info{
+    display:flex;
+}
