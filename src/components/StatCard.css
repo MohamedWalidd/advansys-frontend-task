@@ -1,0 +1,27 @@
+.stat-card {
+  background-color: white;
+  border-radius: 24px;
+  display: flex;
+  padding: 4px 8px;
+  gap: 8px;
+  align-items: center;
+}
+
+.stat-name {
+  color: #7482ae;
+  font-size: 10px;
+}
+
+.stat-text {
+  font-weight: 700;
+}
+
+.stat-icon-container {
+  border-radius: 100%;
+  background-color: #f4f7fe;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

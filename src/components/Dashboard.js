@@ -2,16 +2,17 @@ import React from "react";
 import Icon from "./Icon";
 import "./dashboard.css";
 
-function Dashboard({ isActive }) {
+function Dashboard({ isActive, iconName, content }) {
   return (
     <div className="dashboard-container">
       <div className="dashboard-content">
         <Icon
-          name="dashboardIcon"
-          height={isActive?"25px":"17px"}
+          name={iconName}
+          width={isActive ? "25px" : "17px"}
+          Length={isActive ? "25px" : "17px"}
         />
         <strong style={{ color: isActive ? "#2B3674" : "#7482AE" }}>
-          Dashboard
+          {content}
         </strong>
       </div>
       {isActive && <div className="active"></div>}

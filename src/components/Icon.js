@@ -12,9 +12,11 @@ import configurationsIcon from "../assets/configurations.svg";
 import termsAndConditionsIcon from "../assets/termsAndConditions.svg";
 import errorIcon from "../assets/error.svg";
 import smsIcon from "../assets/sms.svg";
-import smsLengthIcon from"../assets/smsLength.svg"
+import smsLengthIcon from "../assets/smsLength.svg";
+import advansysLogoLargeIcon from "../assets/advansysLogoLarge.svg";
+import sidebarButtonIcon from "../assets/sidebarButton.svg";
 
-function Icon(props, width, height) {
+function Icon({ name, width, length }) {
   const svgs = {
     totalBalanceIcon,
     dashboardIcon,
@@ -28,17 +30,14 @@ function Icon(props, width, height) {
     termsAndConditionsIcon,
     errorIcon,
     smsIcon,
-    smsLengthIcon
+    smsLengthIcon,
+    advansysLogoLargeIcon,
+    sidebarButtonIcon,
   };
 
-  const selectedIcon = svgs[props.name];
+  const selectedIcon = svgs[name];
   return (
-    <img
-      src={selectedIcon}
-      alt={props.name}
-      width={props.width}
-      height={props.height}
-    ></img>
+    <img src={selectedIcon} alt={name} width={width} height={length}></img>
   );
 }
 
