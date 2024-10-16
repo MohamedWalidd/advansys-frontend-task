@@ -1,26 +1,27 @@
 import React from "react";
-import StatCard from "./StatCard";
+import TitleStatCard from "./TitleStatCard";
 import "./titleSection.css";
 import Icon from "./Icon";
+
 function TitleSection() {
   return (
     <div className="title-section">
       <h1 className="title">Main Dashboard</h1>
       <div className="title-section-stats-container">
-        <StatCard
+        <TitleStatCard
           iconName="smsIcon"
           statName="SMS"
           color="#BA1319"
           text="81,765,601,333"
         />
-        <StatCard
+        <TitleStatCard
           iconName="totalBalanceIcon"
           statName="Balance"
           color="#05CD99"
           text="5000 EGP"
         />
         <div className="stat-card">
-          <StatCard
+          <TitleStatCard
             iconName="advansysLogoSmallIcon"
             color="#2B3674"
             text="Advansys"

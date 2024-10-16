@@ -1,7 +1,7 @@
 import Icon from "./Icon";
 import "./StatCard.css";
 
-function StatCard({ iconName, statName, text, color }) {
+function TitleStatCard({ iconName, statName, text, color }) {
   return (
     <div className="stat-card">
       <span className="stat-icon-container">
@@ -15,5 +15,5 @@ function StatCard({ iconName, statName, text, color }) {
   );
 }
 
-export default StatCard;
+export default TitleStatCard;
 

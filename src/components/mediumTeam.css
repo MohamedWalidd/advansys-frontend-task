@@ -1,0 +1,37 @@
+.medium-team-container {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 14px;
+  padding: 13px 16px 28px 16px;
+  gap: 20px;
+}
+
+.team-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px;
+}
+
+.team-header-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: #2b3674;
+}
+
+.cards-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card-icon-container {
+  border-radius: 7px;
+  background-color: #f4f7fe;
+  width: 26px;
+  height: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

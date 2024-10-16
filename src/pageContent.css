@@ -28,3 +28,8 @@
   gap: 16px;
 }
 
+.campaign-info-section {
+  display: flex;
+  gap: 14px;
+}
+

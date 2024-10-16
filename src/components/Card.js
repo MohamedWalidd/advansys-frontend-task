@@ -2,11 +2,11 @@ import Badge from "./Badge";
 
 import "./card.css";
 
-function Card() {
+function Card({ name, badgeStatus }) {
   return (
     <div className="card-container">
-      <strong>Advansys#1</strong>
-      <Badge name="Active" />
+      <strong>{name}</strong>
+      <Badge status={badgeStatus} />
     </div>
   );
 }

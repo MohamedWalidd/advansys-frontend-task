@@ -16,6 +16,7 @@ import sidebarButtonIcon from "../assets/sidebarButton.svg";
 import calendarIcon from "../assets/calendar.svg";
 import dropdownIcon from "../assets/dropdown.svg";
 import advansysLogoSmallIcon from "../assets/advansysLogoSmall.svg";
+import moreButtonIcon from "../assets/moreButton.svg";
 function Icon({ name, width, height }) {
   const svgs = {
     totalBalanceIcon,
@@ -36,6 +37,7 @@ function Icon({ name, width, height }) {
     calendarIcon,
     dropdownIcon,
     advansysLogoSmallIcon,
+    moreButtonIcon,
   };
 
   const selectedIcon = svgs[name];
