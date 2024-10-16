@@ -1,4 +1,3 @@
-import React from "react";
 import Dashboard from "./Dashboard";
 import Icon from "./Icon";
 import "./sidebar.css";
@@ -8,8 +7,8 @@ function Sidebar() {
     <div>
       <div className="sidebar-header">
         <div className="header-content">
-          <Icon name="advansysLogoLargeIcon" width="180px" length="32px" />
-          <Icon name="sidebarButtonIcon" width="12px" length="12px" />
+          <Icon name="advansysLogoLargeIcon" width="180px" height="32px" />
+          <Icon name="sidebarButtonIcon" width="12px" height="12px" />
         </div>
       </div>
 
@@ -59,3 +58,4 @@ function Sidebar() {
 }
 
 export default Sidebar;
+

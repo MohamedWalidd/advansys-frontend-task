@@ -1,4 +1,3 @@
-import React from "react";
 import Icon from "./Icon";
 import "./dashboard.css";
 
@@ -9,7 +8,7 @@ function Dashboard({ isActive, iconName, content }) {
         <Icon
           name={iconName}
           width={isActive ? "25px" : "17px"}
-          Length={isActive ? "25px" : "17px"}
+          height={isActive ? "25px" : "17px"}
         />
         <strong style={{ color: isActive ? "#2B3674" : "#7482AE" }}>
           {content}
@@ -21,3 +20,4 @@ function Dashboard({ isActive, iconName, content }) {
 }
 
 export default Dashboard;
+

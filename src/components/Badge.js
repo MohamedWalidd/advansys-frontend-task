@@ -1,4 +1,3 @@
-import React from "react";
 import "./badge.css";
 
 function Badge({ name }) {
@@ -24,3 +23,4 @@ function Badge({ name }) {
 }
 
 export default Badge;
+

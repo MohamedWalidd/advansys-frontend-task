@@ -1,4 +1,3 @@
-import React from "react";
 import Icon from "./Icon";
 
 import "./earnings.css";
@@ -9,14 +8,9 @@ function Earnings(props) {
       <div className="earnings-info">
         <div>
           <p>{props.title}</p>
-          <Icon
-            name={
-              (props.title === "SMS Count" || props.title === "SMS Length") &&
-              "errorIcon"
-            }
-            width="9px"
-            length="9px"
-          />
+          {(props.title === "SMS Count" || props.title === "SMS Length") && (
+            <Icon name="infoIcon" width="9px" height="9px" />
+          )}
         </div>
       </div>
       <strong>{props.content}</strong>
@@ -24,3 +18,4 @@ function Earnings(props) {
   );
 }
 export default Earnings;
+

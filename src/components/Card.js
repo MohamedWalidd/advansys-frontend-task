@@ -1,4 +1,3 @@
-import React from "react";
 import Badge from "./Badge";
 
 import "./card.css";
@@ -13,3 +12,4 @@ function Card() {
 }
 
 export default Card;
+

@@ -12,15 +12,14 @@
   justify-content: space-between;
 }
 
-.title-section-stats-container {
+.calendar-section {
   display: flex;
-  gap: 10px;
-}
-
-.title {
-  font-size: 24px;
-  font-weight: 700;
-  color: #2b3674;
+  align-items: center;
+  background-color: white;
+  width: fit-content;
+  border-radius: 5px;
+  padding: 8px;
+  gap: 12px;
 }
 
 .cards-section {
@@ -28,3 +27,4 @@
   justify-content: space-between;
   gap: 16px;
 }
+

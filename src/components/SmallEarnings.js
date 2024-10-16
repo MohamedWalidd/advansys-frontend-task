@@ -1,4 +1,3 @@
-import React from "react";
 import Icon from "./Icon";
 import Earnings from "./Earnings";
 import "./SmallEarnings.css";
@@ -10,10 +9,11 @@ function SmallEarnings({ type }) {
   return (
     <div className="small-earnings-container ">
       <div className="icon-container">
-        <Icon name={earningType.icon} size={20} />
+        <Icon name={earningType.icon} width="20px" height="20px" />
       </div>
       <Earnings title={earningType.title} content={earningType.content} />
     </div>
   );
 }
 export default SmallEarnings;
+

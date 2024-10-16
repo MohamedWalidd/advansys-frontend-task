@@ -7,15 +7,6 @@
   align-items: center;
 }
 
-.stat-name {
-  color: #7482ae;
-  font-size: 10px;
-}
-
-.stat-text {
-  font-weight: 700;
-}
-
 .stat-icon-container {
   border-radius: 100%;
   background-color: #f4f7fe;
@@ -24,4 +15,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.stat-name {
+  color: #7482ae;
+  font-size: 10px;
+}
+
+.stat-text {
+  font-weight: 700;
 }

@@ -1,0 +1,9 @@
+.date-container {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.date {
+  font-weight: 500;
+  font-size: 12px;
+}

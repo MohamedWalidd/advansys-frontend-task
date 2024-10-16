@@ -1,5 +1,3 @@
-import React from "react";
-
 import totalBalanceIcon from "../assets/totalBalance.svg";
 import dashboardIcon from "../assets/dashboard.svg";
 import campaignsIcon from "../assets/campaigns.svg";
@@ -10,13 +8,15 @@ import transactionsIcon from "../assets/transactions.svg";
 import apiIntegrationIcon from "../assets/apiIntegration.svg";
 import configurationsIcon from "../assets/configurations.svg";
 import termsAndConditionsIcon from "../assets/termsAndConditions.svg";
-import errorIcon from "../assets/error.svg";
+import infoIcon from "../assets/info.svg";
 import smsIcon from "../assets/sms.svg";
 import smsLengthIcon from "../assets/smsLength.svg";
 import advansysLogoLargeIcon from "../assets/advansysLogoLarge.svg";
 import sidebarButtonIcon from "../assets/sidebarButton.svg";
-
-function Icon({ name, width, length }) {
+import calendarIcon from "../assets/calendar.svg";
+import dropdownIcon from "../assets/dropdown.svg";
+import advansysLogoSmallIcon from "../assets/advansysLogoSmall.svg";
+function Icon({ name, width, height }) {
   const svgs = {
     totalBalanceIcon,
     dashboardIcon,
@@ -28,17 +28,21 @@ function Icon({ name, width, length }) {
     apiIntegrationIcon,
     configurationsIcon,
     termsAndConditionsIcon,
-    errorIcon,
+    infoIcon,
     smsIcon,
     smsLengthIcon,
     advansysLogoLargeIcon,
     sidebarButtonIcon,
+    calendarIcon,
+    dropdownIcon,
+    advansysLogoSmallIcon,
   };
 
   const selectedIcon = svgs[name];
   return (
-    <img src={selectedIcon} alt={name} width={width} height={length}></img>
+    <img src={selectedIcon} alt={name} width={width} height={height}></img>
   );
 }
 
 export default Icon;
+

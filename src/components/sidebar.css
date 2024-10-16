@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 33px 0px 33px 0px;
+  margin: 33px 0px;
 }
 .header-content {
   display: flex;
@@ -18,3 +18,4 @@
   gap: 16px;
   align-items: end;
 }
+
