@@ -1,0 +1,20 @@
+.percentage-cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 44px;
+  gap: 8px;
+}
+
+.percentage-background {
+  background-color: white;
+  height: 5.69px;
+  width: 67.6px;
+  border-radius: 15px;
+}
+.percentage-progress {
+  background-color: black;
+  height: 5.69px;
+  width: 48.82px;
+  border-radius: 15px;
+}

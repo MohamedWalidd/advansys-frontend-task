@@ -1,4 +1,4 @@
-import TableRow from "./TableRow";
+import Percentage from "./Percentage";
 
 function Table() {
   const columns = [
@@ -26,8 +26,22 @@ function Table() {
         </tr>
       </thead>
       <tbody>
-        {rows.map((rowData, rowIndex) => (
-          <TableRow key={rowIndex} rowData={rowData} />
+        {rows.map((cell, index) => (
+          <tr key={index}>
+            {cell.map((data, cellIndex) => {
+              if (cellIndex === 1) {
+                return (
+                  <td>
+                    <div className="percentage-cell">
+                      {data}
+                      <Percentage />
+                    </div>
+                  </td>
+                );
+              }
+              return <td>{data}</td>;
+            })}
+          </tr>
         ))}
       </tbody>
     </table>
