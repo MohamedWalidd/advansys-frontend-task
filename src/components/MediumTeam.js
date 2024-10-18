@@ -12,9 +12,27 @@ function MediumTeam() {
         </span>
       </div>
       <div className="cards-container">
-        <Card name="Advansys #1" badgeStatus="active" />
-        <Card name="Advansys #2" badgeStatus="pending" />
-        <Card name="Advansys #3" badgeStatus="pending" />
+        <Card
+          name="Advansys #1"
+          badgeDot={true}
+          badgeText="Active"
+          badgeTextColor="#05CD99"
+          badgeColor="#ECFDF3"
+        />
+        <Card
+          name="Advansys #2"
+          badgeDot={true}
+          badgeText="Pending"
+          badgeTextColor="#CD9505"
+          badgeColor="#FDF7EC"
+        />
+        <Card
+          name="Advansys #3"
+          badgeDot={true}
+          badgeText="Pending"
+          badgeTextColor="#CD9505"
+          badgeColor="#FDF7EC"
+        />
       </div>
     </div>
   );

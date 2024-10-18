@@ -1,4 +1,4 @@
-import "./percentage.css";
+import "./table.css";
 
 function Percentage() {
   return (

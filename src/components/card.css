@@ -9,3 +9,8 @@
   border: 0.75px solid #e9edf7;
   padding: 15px 11px 15px 11px;
 }
+
+.card-badge-container {
+  width: fit-content;
+}
+
