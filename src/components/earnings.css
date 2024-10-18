@@ -3,7 +3,6 @@
   flex-direction: column;
   align-items: flex-start;
   padding: 0px;
-  height: 40px;
   font-family: "DM Sans";
 }
 .earnings-container p {
@@ -25,3 +24,4 @@
 .earnings-info {
   display: flex;
 }
+

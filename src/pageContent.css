@@ -3,8 +3,9 @@
   flex-direction: column;
   gap: 16px;
   height: 100vh;
-  padding: 24px 14px;
+  padding: 32px 14px;
   background-color: #f4f7fe;
+  overflow-y: auto;
 }
 
 .title-section {
@@ -29,6 +30,10 @@
 }
 
 .campaign-info-section {
+  display: flex;
+  gap: 14px;
+}
+.messages-API-section {
   display: flex;
   gap: 14px;
 }

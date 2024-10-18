@@ -52,10 +52,11 @@
 
 .table-body td:last-child {
   border-right: none; /* Remove right border for the last column */
+  text-align: center;
 }
 
-.table-body tr:nth-child(-n + 3) td:first-child {
-  border-bottom: solid white; /* Remove bottom border for the first three rows of the first column */
+.table-body tr td:first-child {
+  border-bottom: solid white; /* Remove bottom border for the first three rows of the first column and align to center*/
   text-align: center;
 }
 
@@ -92,4 +93,12 @@ td {
   align-items: center;
   justify-content: center;
   width: 100px;
+}
+
+.status-cell {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  font-weight: 500;
+  gap: 8px;
 }

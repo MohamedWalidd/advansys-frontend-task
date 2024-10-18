@@ -1,12 +1,15 @@
 import "./App.css";
 import "./pageContent.css";
-
 import Sidebar from "./components/Sidebar";
 import TitleSection from "./components/TitleSection";
 import CardsSection from "./components/CardsSection";
 import CalendarSection from "./components/CalendarSection";
-import Table from "./components/Table";
 import MediumTeam from "./components/MediumTeam";
+import CampaignsTable from "./components/CampaignTable";
+import ScheduledMessagesTable from "./components/ScheduledMessagesTable";
+import APICard from "./components/APICard";
+import CustomCalendar from "./components/customCalendar";
+
 function App() {
   return (
     <div className="App">
@@ -17,16 +20,19 @@ function App() {
         <TitleSection />
         <CalendarSection date="1 Nov, 2023 - 1 Feb, 2024" />
         <CardsSection />
-        <div>chart section</div>
 
         <div className="campaign-info-section">
-          <Table />
+          <CampaignsTable />
           <div>
             <MediumTeam />
           </div>
         </div>
 
-        <div>messages section</div>
+        <div className="messages-API-section">
+          <ScheduledMessagesTable />
+          <CustomCalendar />
+          <APICard />
+        </div>
       </div>
     </div>
   );

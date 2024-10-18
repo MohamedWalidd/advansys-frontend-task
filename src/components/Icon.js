@@ -17,6 +17,9 @@ import calendarIcon from "../assets/calendar.svg";
 import dropdownIcon from "../assets/dropdown.svg";
 import advansysLogoSmallIcon from "../assets/advansysLogoSmall.svg";
 import moreButtonIcon from "../assets/moreButton.svg";
+import greenCheckmarkIcon from "../assets/greenCheckmark.svg";
+import pendingExclamationMarkIcon from "../assets/pendingExclamationMark.svg";
+import APIIcon from "../assets/API.svg";
 function Icon({ name, width, height }) {
   const svgs = {
     totalBalanceIcon,
@@ -38,6 +41,9 @@ function Icon({ name, width, height }) {
     dropdownIcon,
     advansysLogoSmallIcon,
     moreButtonIcon,
+    greenCheckmarkIcon,
+    pendingExclamationMarkIcon,
+    APIIcon,
   };
 
   const selectedIcon = svgs[name];

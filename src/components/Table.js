@@ -4,26 +4,11 @@ import Percentage from "./Percentage";
 
 import "./table.css";
 
-function Table() {
-  const columns = [
-    "Campaign Name",
-    "Delivered %",
-    "Total SMS",
-    "Date",
-    "Sender",
-    "Type",
-  ];
-
-  const rows = [
-    ["Smartcom_jav_2024", "75%", "2338", "Dec 30 2023", "Sender #1", "One:One"],
-    ["Smartcom_jav_2024", "75%", "1399", "jan 13 2024", "Sender #1", "Bulk"],
-    ["Smartcom_jav_2024", "75%", "5941", "Dec 23 2023", "Sender #1", "One:One"],
-  ];
-
+function Table({ columns, rows, name }) {
   return (
     <div className="container">
       <div className="table-header">
-        <span className="table-header-title">All Campaigns</span>
+        <span className="table-header-title"> {name}</span>
         <span className="table-header-icon">
           <Icon name="dropdownIcon" width="16px" height="16px" />
         </span>
@@ -41,15 +26,32 @@ function Table() {
             <tr key={index}>
               {cell.map((data, cellIndex) => {
                 if (cellIndex === 1) {
-                  return (
+                  return name === "All Campaigns" ? (
                     <td>
                       <div className="percentage-cell">
                         {data}
                         <Percentage />
                       </div>
                     </td>
-                  );
-                } else if (cellIndex === 5) {
+                  ) : name === "Scheduled Messages" ? (
+                    <td>
+                      <div className="status-cell">
+                        <Icon
+                          name={
+                            data === "Sent"
+                              ? "greenCheckmarkIcon"
+                              : data === "Pending"
+                              ? "pendingExclamationMarkIcon"
+                              : null
+                          }
+                          width="16px"
+                          height="16px"
+                        />
+                        {data}
+                      </div>
+                    </td>
+                  ) : null;
+                } else if (cellIndex === 5 && name === "All Campaigns") {
                   return (
                     <td>
                       <div className="type-cell">

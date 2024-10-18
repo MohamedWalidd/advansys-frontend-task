@@ -1,5 +1,5 @@
 import Icon from "./Icon";
-import "./StatCard.css";
+import "./titleStatCard.css";
 
 function TitleStatCard({ iconName, statName, text, color }) {
   return (

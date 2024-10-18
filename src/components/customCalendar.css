@@ -1,0 +1,40 @@
+.calendar-container {
+  max-width: 350px;
+  margin: auto;
+  background-color: #f0f4ff;
+  padding: 18px 14px;
+  border-radius: 15px;
+}
+
+.react-calendar__tile {
+  padding: 15px;
+  background: white;
+  border: none;
+  color: #333;
+  border-radius: 50%;
+  font-size: 16px;
+}
+
+.hovered {
+  background-color: #d3d3d3;
+  color: #333;
+  border-radius: 50%;
+}
+
+.selected {
+  background-color: #ff4d4d;
+  color: white;
+  font-weight: bold;
+  border-radius: 50%;
+}
+
+/* Override default selected blue from react-calendar */
+.react-calendar__tile--active {
+  background-color: #ff4d4d !important; /* Always force red when selected */
+  color: white !important;
+}
+
+/* Ensure previously selected day does not retain the old active state */
+.react-calendar__tile--active:hover {
+  background-color: #d3d3d3 !important; /* Hover doesn't affect selected */
+}

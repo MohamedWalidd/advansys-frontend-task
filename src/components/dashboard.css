@@ -3,7 +3,6 @@
   align-items: center;
   justify-content: space-between;
   width: 180px;
-  height: 25px;
   padding: 0px;
 }
 .dashboard-content {
@@ -24,3 +23,4 @@ strong {
   background: #ba1319;
   border-radius: 17.7865px;
 }
+

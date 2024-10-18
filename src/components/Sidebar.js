@@ -6,7 +6,7 @@ function Sidebar() {
   return (
     <div>
       <div className="sidebar-header">
-        <div className="header-content">
+        <div className="sidebar-header-content">
           <Icon name="advansysLogoLargeIcon" width="180px" height="32px" />
           <Icon name="sidebarButtonIcon" width="12px" height="12px" />
         </div>

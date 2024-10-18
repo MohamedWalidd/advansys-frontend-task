@@ -1,0 +1,42 @@
+.api-card-container {
+  width: 257.8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 31.5px;
+  padding: 14px;
+  background-color: white;
+  border-radius: 14px;
+}
+.api-card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+.api-title {
+  color: #2b3674;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 23.44px;
+}
+.api-content {
+  color: #7482ae;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 15.62px;
+}
+.api-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #222222;
+  border-radius: 16px;
+  height: 40px;
+
+  color: white;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15.62px;
+  text-align: center;
+  padding: 14px;
+}
